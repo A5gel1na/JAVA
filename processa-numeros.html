@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Soma Números</title>
+    <script src="scripts.js"> </script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header class="banner">
+        <h1>Bem Vindo ao Processador de Números!</h1>
+        <p>Essa página realiza as quatro operações básicas, adição, subtração, multiplicação e divisão e mais coisas!
+        </p>
+    </header>
+
+    <main>
+        <section id="saudacao-usuario">
+            <h2>Dobra um número (Ex00)</h2>
+            <form class="tabela-CSS">
+                <div>
+                    <label for="nomeUsrEx00">Nome do usuário:</label>
+                    <input type="text" id="nomeUsrEx00" placeholder="Digite seu nome aqui!">
+                </div>
+                <div>
+                    <button type="button" onclick="saudaUsuario()">Exibir Saudação</button>
+                    <p> &nbsp;</p>
+                </div>
+            </form>
+
+        </section>
+
+        <section>
+            <p id="saudacaoUsr"> </p>
+        </section>
+
+        <section id="dobra-numero">
+            <h2>Dobra um número (Ex01)</h2>
+            <form class="tabela-CSS">
+                <div>
+                    <label for="num1Ex01">Número:</label>
+                    <input type="number" id="num1Ex01">
+                </div>
+                <div>
+                    <button type="button" onclick="dobraNumero()">Dobrar</button>
+                    <p class="resultado">Dobro do número: <span id="resultadoDobra"></span> </p>
+                </div>
+            </form>
+        </section>
+
+        <section id="soma-numeros">
+            <h2>Soma números (Ex02)</h2>
+            <form class="tabela-CSS">
+                <div>
+                    <label>Primeiro número:</label>
+                    <input type="number" id="num1Ex02">
+                </div>
+
+                <div>
+                    <label>Segundo número:</label>
+                    <input type="number" id="num2Ex02">
+                </div>
+
+                <div>
+                    <button type="button" onclick="somaNumeros()">Somar</button>
+                    <p class="resultado">Resultado da Soma: <span id="resultadoSoma"></span> </p>
+                </div>
+            </form>
+        </section>
+
+        <section id="soma-tres">
+            <h2>Soma de três números (Ex03)</h2>
+            <form class="tabela-CSS">
+                <div>
+                    <label>Primeiro número:</label>
+                    <input type="number" id="num1Ex03">
+                </div>
+
+                <div>
+                    <label>Segundo número:</label>
+                    <input type="number" id="num2Ex03">
+                </div>
+
+                <div>
+                    <label>Terceiro número:</label>
+                    <input type="number" id="num3Ex03">
+                </div>
+
+                <div>
+                    <button type="button" onclick="somaTres()">Somar</button>
+                    <p class="resultado">Resultado da Soma: <span id="resultadoSomatres"></span> </p>
+                </div>
+            </form>
+        </section>
+
+        <section id="subtracao-numeros">
+            <h2>Subtração de dois números (Ex04)</h2>
+            <form class="tabela-CSS">
+                <div>
+                    <label>Primeiro número:</label>
+                    <input type="number" id="num1Ex04">
+                </div>
+
+                <div>
+                    <label>Segundo número:</label>
+                    <input type="number" id="num2Ex04">
+                </div>
+
+                <div>
+                    <button type="button" onclick="subtracaoNumeros()">Subtrair</button>
+                    <p class="resultado">Resultado da Subtracação: <span id="resultadoSubtracao"></span> </p>
+                </div>
+            </form>
+        </section>
+
+        <section id="multiplicacao-numeros">
+            <h2>Multiplicação de dois números (Ex05)</h2>
+            <form class="tabela-CSS">
+                <div>
+                    <label>Primeiro número:</label>
+                    <input type="number" id="num1Ex05">
+                </div>
+
+                <div>
+                    <label>Segundo número:</label>
+                    <input type="number" id="num2Ex05">
+                </div>
+
+                <div>
+                    <button type="button" onclick="multiplicacaoNumeros()">Multiplicar</button>
+                    <p class="resultado">Resultado da Multiplicação: <span id="resultadoMultiplicacao"></span> </p>
+                </div>
+            </form>
+        </section>
+
+        <section id="divisao-numeros">
+            <h2>Divisao de dois números (Ex06)</h2>
+            <form class="tabela-CSS">
+                <div>
+                    <label>Primeiro número:</label>
+                    <input type="number" id="num1Ex06">
+                </div>
+
+                <div>
+                    <label>Segundo número:</label>
+                    <input type="number" id="num2Ex06">
+                </div>
+
+                <div>
+                    <button type="button" onclick="divisaoNumeros()">Dividir</button>
+                    <p class="resultado">Resultado da Divisao: <span id="resultadoDivisao"></span> </p>
+                </div>
+            </form>
+        </section>
+
+        <section id="multiplas-operacoes">
+            <h2>Múltiplas Operações (Ex07)</h2>
+            <form class="tabela-CSS">
+                <div>
+                    <label>Primeiro número:</label>
+                    <input type="number" id="num1Ex07">
+                </div>
+
+                <div>
+                    <label>Segundo número:</label>
+                    <input type="number" id="num2Ex07">
+                </div>
+
+                <div>
+                    <button type="button" onclick="multiplasOperacoes()">Dividir</button>
+                    <p class="resultado">Resultado da Operação: <span id="resultadoOperacao"></span> </p>
+                </div>
+            </form>
+        </section>
+
+        <section id="concatenacao">
+            <h2>Concatenação de strings (Ex08)</h2>
+            <form class="tabela-CSS">
+                <div>
+                    <label for="nome">Primeiro Nome:</label>
+                    <input type="text" id="nomeUsrEx08" placeholder="Digite seu primeiro nome">
+                </div>
+
+                <div>
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" id="sobreNomeUsrEx08" placeholder="Digite seu sobrenome">
+                </div>
+
+                <div>
+                    <button type="button" onclick="nomeUsuario()">Nome completo</button>
+                    <p class="resultado">Resultado da Operação: <span id="resultEx08"></span> </p>
+                </div>
+            </form>
+
+    </main>
+</body>
+
+</html>
