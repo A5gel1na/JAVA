@@ -96,5 +96,33 @@ function somaNumeros() {
   elResult08.innerHTML = nomeCompleto;
 }
 
+ function Endereco() {
+  const elNomeUsr = document.getElementById('nomeUsrEx09'); // elemento com o nome do usuário
+  const nomeUsr   = elNomeUsr.value.trim(); // Recupera o nome do usuario
+
+  const elSobrenomeUsr = document.getElementById('sobreNomeUsrEx09'); // elemento com o nome do usuário)
+  const sobreNomeUsr   = elSobrenomeUsr.value.trim(); // Recupera o nome do usuario
+
+  const elenderecoUsr = document.getElementById('enderecoUsrEx09'); // elemento com o nome do usuário)
+  const enderecoUsr   = elenderecoUsr.value.trim(); // Recupera o nome do usuario
+  
+  const email = nomeUsr+'.'+sobreNomeUsr+'@'+enderecoUsr;
+  const elResult08 = document.getElementById('resultEx09'); // recupera elemento que exibirá a saudação na tela
+  elResult08.innerHTML = email;
+}
+
+function multiplasOperacoesNumeros() {
+  const elNum1 = document.getElementById('num1Ex10'); // Recupera o elemento com o primeiro número 
+  const elNum2 = document.getElementById('num2Ex10'); // Recupera o elemento com o segundo número
+  const elNum3 = document.getElementById('num3Ex10'); // Recupera o elemento com o segundo número
+  const num1 = parseFloat(elNum1.value); // Lê o primeiro valor 
+  const num2 = parseFloat(elNum2.value); // Lê o segundo valor
+  const num3 = parseFloat(elNum3.value); // Lê o segundo valor
+
+  const resultado = (num1+num2)*num3; // soma os números
+  const elResultado = document.getElementById('resultadoEx10');  // Recupera o elemento que vai exibir o resultado
+  elResultado.innerHTML = resultado; // Exibe o resultado
+  }
+
 
 
